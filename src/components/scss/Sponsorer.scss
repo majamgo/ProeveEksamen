@@ -1,0 +1,76 @@
+@import './variables';
+
+.spons-main {
+    width: 100%;
+    height: auto;
+    //background-color: gold;
+}
+
+.spons-alt {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    background-color: $col_white;
+}
+
+.spons-h2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 35px;
+    background-color: $col_red;
+    h2 {
+        margin: 0 0 0 5px;
+        color: $col_white;
+        font-weight: 550;
+        text-transform: uppercase;
+    }
+}
+
+.spons-data {
+    width: auto;
+    height: auto;
+    //background-color: blue;
+}
+
+.spons-guldbil {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0 0;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.spons-sølvbil {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0 0;
+    box-shadow: 1px 1px 1px grey;
+}
+
+@media screen and (min-width: 768px) {
+    .spons-alt {
+        padding: 15px 0 0;
+        max-width: 960px;
+        margin: 15px;
+    }
+
+    .spons-h2 {
+        width: 500px;
+        margin: 10px 0;
+    }
+
+    .spons-data {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .spons-guldbil {
+        width: 230px;
+        margin: 5px;
+    }
+
+    .spons-sølvbil {
+        width: 130px;
+        margin: 5px;
+    }
+}

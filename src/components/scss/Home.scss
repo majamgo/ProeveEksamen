@@ -1,0 +1,29 @@
+@import './variables';
+
+.home-main {
+    width: 100%;
+    height: auto;
+    // background-color: purple;
+}
+
+.home-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding: 0 0 0 10px;
+    background-color: $col_red;
+    color: $col_white;
+
+    h2 {
+        margin: 10px 8px 10px 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .home-countdown {
+        max-width: 650px;
+    }
+}

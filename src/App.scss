@@ -1,0 +1,39 @@
+@import './components/scss/variables';
+
+.App {
+    width: 100%;
+    background-image: url('http://localhost:5021/images/events/foresttothebay.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+    p {
+        font-size: 12px;
+        color: $col_dark;
+    }
+}
+
+.App-main {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.App-Switch {
+    width: 75%;
+    height: auto;
+    //background-color: saddlebrown;
+}
+
+
+// TABLET
+@media screen and (max-width: 768px) {
+    .App-main {
+        flex-direction: column;
+    }
+
+    .App-Switch {
+        width: 100%;
+    }
+}

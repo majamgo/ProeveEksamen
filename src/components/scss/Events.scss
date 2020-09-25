@@ -1,0 +1,117 @@
+@import './variables';
+
+.main-events {
+    width: 100%;
+    height: auto;
+    //background-color: red;
+}
+
+.events-alt {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: $col_white;
+}
+
+.events-indkreds {
+    width: auto;
+    height: auto;
+    margin: 15px 15px 10px;
+    //background-color: purple;
+
+    h5 {
+        margin: 15px 0 0;
+    }
+
+}
+
+.events-checkbox {
+    display: flex;
+    margin: 5px 0 0;
+
+    p {
+        margin: 0 0 0 5px;
+    }
+}
+
+.events-alle {
+    width: auto;
+    height: auto;
+    margin: 5px 15px 15px;
+    //background-color: rebeccapurple;
+}
+
+.events-enevent {
+    width: 100%;
+    height: auto;
+    background-color: $col_light;
+    margin: 15px 0;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.events-eventinfo {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    //background-color: gainsboro;
+
+    h6 {
+        margin: 5px 0;
+    }
+
+    p {
+        margin: 0 0 15px;
+    }
+}
+
+.events-knap {
+    cursor: pointer;
+    width: 100%;
+    height: 25px;
+    text-transform: uppercase;
+    font-weight: 550;
+    border-radius: 0px;
+    border: none;
+    background-color: $col_red;
+    color: $col_white;
+    margin: 15px 0 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .events-alt {
+        flex-direction: row;
+        margin: 15px;
+        max-width: 960px;
+    }
+
+    .events-indkreds {
+        width: 20%;
+        margin: 15px 10px 15px 15px;
+    }
+
+    .events-alle {
+        width: 80%;
+        margin: 15px 15px 15px 5px;
+    }
+
+    .events-everything {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        //background-color: firebrick;
+    }
+
+    .events-enevent {
+        width: 230px;
+        margin: 5px 0;
+    }
+}
